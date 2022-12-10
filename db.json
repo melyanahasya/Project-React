@@ -1,0 +1,171 @@
+{
+  "admins": [
+    {
+      "id": 1,
+      "username": "Admin",
+      "password": "Administrator"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "mely@gmail",
+      "password": "123"
+    },
+    {
+      "email": "Mely",
+      "password": "123",
+      "id": 2
+    }
+  ],
+  "makananRingan": [
+    {
+      "id": 1,
+      "gambar": "https://keluyuran.com/wp-content/uploads/2021/08/Chocolate-Stroop-Waffle_.webp",
+      "namaMakanan": "Chocolate Stroop Waffle",
+      "harga": "15,000"
+    },
+    {
+      "id": 2,
+      "gambar": "https://keluyuran.com/wp-content/uploads/2021/08/Sumatra-Chocolate-Eclair_.webp",
+      "namaMakanan": "Sumatra Chocolate Éclair",
+      "harga": " 25,000"
+    },
+    {
+      "id": 3,
+      "gambar": "https://keluyuran.com/wp-content/uploads/2021/08/Blue-Velvet-Roll-Cake_.webp",
+      "namaMakanan": "Blue Velvet Roll Cake",
+      "harga": "28,000"
+    },
+    {
+      "id": 4,
+      "gambar": "https://keluyuran.com/wp-content/uploads/2021/08/Red-Velvet-Roll-Cake_.webp",
+      "namaMakanan": "Red Velvet Roll Cake",
+      "harga": "30,000"
+    }
+  ],
+  "minumanDingin": [
+    {
+      "id": 1,
+      "gambar": "https://www.rukita.co/stories/wp-content/uploads/2019/11/starbucks-americano.jpg",
+      "namaMinuman": "Caffe Americano",
+      "harga": "45,000"
+    },
+    {
+      "id": 2,
+      "gambar": "https://www.rukita.co/stories/wp-content/uploads/2019/11/latte-starbucks.jpg",
+      "namaMinuman": "Variasi Latte",
+      "harga": "35,000"
+    },
+    {
+      "id": 3,
+      "gambar": "https://www.rukita.co/stories/wp-content/uploads/2019/11/stabucks-cheesecake-frappuccinos-t.jpg",
+      "namaMinuman": "Frappucino",
+      "harga": "62,000"
+    },
+    {
+      "id": 4,
+      "gambar": "https://www.rukita.co/stories/wp-content/uploads/2019/11/banana-split-frappucino.jpg",
+      "namaMinuman": "Banana Split Frappuccino",
+      "harga": "39,000"
+    },
+    {
+      "id": 5,
+      "gambar": "https://www.rukita.co/stories/wp-content/uploads/2019/11/butterbeer-frappuccino.jpg",
+      "namaMinuman": " Butterbeer Frappuccino",
+      "harga": "58,000"
+    }
+  ],
+  "minumanHangat": [
+    {
+      "id": 2,
+      "gambarHangat": "https://keluyuran.com/wp-content/uploads/2021/10/mango-passion-frap_.webp",
+      "namaMinumanHangat": "Hot Manggoes",
+      "hargaHangat": "14,000"
+    },
+    {
+      "id": 3,
+      "gambarHangat": "https://keluyuran.com/wp-content/uploads/2019/03/pumpkin-spice-latte_.webp",
+      "namaMinumanHangat": "Pumpkin Spice Latte",
+      "hargaHangat": "21,000"
+    },
+    {
+      "id": 4,
+      "gambarHangat": "https://keluyuran.com/wp-content/uploads/2021/07/minuman-starbucks-paling-enak-dark-mocca-frappuccino_.webp",
+      "namaMinumanHangat": "Dark Mocca Frappuccino",
+      "hargaHangat": "31,000"
+    },
+    {
+      "id": 5,
+      "gambarHangat": "https://keluyuran.com/wp-content/uploads/2021/07/minuman-starbucks-paling-enak-green-tea-cream-frappuccino_.webp",
+      "namaMinumanHangat": "Green Tea Cream Frappucino",
+      "hargaHangat": "29,000"
+    }
+  ],
+  "makanan": [
+    {
+      "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648994131-QEYvoc.jpg",
+      "produk": "Espersso Brownies",
+      "deskripsi": "Simply a rectangular chocolate and espresso baked confection which is very suitable to be served at family events ",
+      "harga": 52000,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648911669-UiOLxO.jpg",
+      "produk": "Bahn Mie Chiken Baguette",
+      "deskripsi": "Vietnamese baguette with slow roast chicken, spicy mayonnaise and crispy pickle carrot & turnip, and fresh herbs",
+      "harga": 56000,
+      "viewmore": "https://www.starbucks.co.id/menu/food-list/reserve-menu/sandwiches"
+    },
+    {
+      "id": 3,
+      "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648784231-mxdnJ2.jpg",
+      "produk": "Croissant",
+      "deskripsi": "Croissant is a pastry that has a crunchy texture and savory taste. The crunchy texture makes croissants suitable",
+      "harga": 21000,
+      "viewmore": "https://food.grab.com/id/id/restaurant/the-croissants-panjer-delivery/6-C23KAEETRETZAX"
+    },
+    {
+      "id": 4,
+      "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648787038-RNxn9x.jpg",
+      "produk": "Chese Quiche",
+      "deskripsi": "Quiche is a food that comes from France. This food is made from wheat flour with a filling of spinach, salmon, chicken",
+      "harga": 67000,
+      "viewmore": "https://www.starbucks.co.id/menu/food-list/core-menu/savory-pies/cheese-quiche"
+    },
+    {
+      "id": 5,
+      "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648107033-tASXO2.jpg",
+      "produk": "Brewed Coffe",
+      "deskripsi": "Cold Brew Coffee is a cold brew coffee dish that is different from iced coffee such as Iced Americano, Iced Long Black or Iced Japanese",
+      "harga": 65000,
+      "viewmore": "https://www.starbucks.co.id/menu/beverage-list"
+    },
+    {
+      "id": 6,
+      "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648107198-BEeE4W.jpg",
+      "produk": "Blanded Beverages",
+      "deskripsi": "Vietnamese baguette with slow roast chicken, spicy mayonnaise and crispy pickle carrot & turnip, and fresh herbs",
+      "harga": 65000,
+      "viewmore": "https://www.starbucks.co.id/menu/beverage-list"
+    },
+    {
+      "id": 7,
+      "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648003071-e9eIWS.jpg",
+      "produk": "Espresso Beveragess",
+      "deskripsi": "Espresso is a type of coffee that is produced by extracting ground coffee beans by spraying hot water under high pressure",
+      "harga": 21000,
+      "viewmore": "https://www.starbucks.co.id/menu/beverage-list"
+    },
+    {
+      "id": 8,
+      "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648107275-zmcaaV.jpg",
+      "produk": "Others",
+      "deskripsi": "Bringing you a perfect cup of coffee drinks that are very suitable for diets and also the price is very economical let's buy it now",
+      "harga": 15000,
+      "viewmore": "https://www.starbucks.co.id/menu/beverage-list"
+    }
+  ],
+  "keranjang": []
+}
