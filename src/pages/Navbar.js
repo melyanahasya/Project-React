@@ -57,7 +57,7 @@ export default function Navbar() {
                 </>
               ) : (
                 <li className="nav-item float-right border-0 bg-transparent">
-                  <a style={{color: "green"}} className="btn" href="/login">
+                  <a style={{color: "green", fontSize: "19px"}} className="btn" href="/login">
                     Login
                   </a>
                 </li>

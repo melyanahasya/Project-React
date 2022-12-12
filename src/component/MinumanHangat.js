@@ -20,7 +20,7 @@ export default function Minuman() {
   }, []);
   return (
     <div  style={{fontFamily: "public-sans", fontSize: "19px"}}>
-      <h4>Minuman Hangat</h4>
+      <h3 style={{ height: "40px"}}> <strong><i>Minuman Hangat</i></strong></h3>
 
       <hr />
       <table className="table">

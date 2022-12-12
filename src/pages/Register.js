@@ -28,7 +28,7 @@ export default function Register() {
     }
   };
   return (
-    <div className="container border my-5 pt-3 pb-5 px-5 form-login">
+    <div style={{ backgroundColor: "#F0DBDB" }} className="container border my-5 pt-3 pb-5 px-5 form-login">
       <h1 className="mb-5">Form Register</h1>
       <Form onSubmit={register} method="POST">
         <div className="mb-3">

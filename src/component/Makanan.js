@@ -21,8 +21,8 @@ export default function Makanan() {
 
   return (
     <div  style={{fontFamily: "public-sans", fontSize: "19px"}}>
-      <h4>Makanan Ringan</h4>
-      <hr />
+      <h3 style={{ height: "40px"}}> <strong><i>Makanan</i></strong></h3>
+<hr />
       <table className="table">
         <thead>
           <tr>
