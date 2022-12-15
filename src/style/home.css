@@ -6,3 +6,25 @@ image {
 .button{
     text-decoration: none;
 }
+
+@media screen and (max-width:680px){
+
+	.card{
+		width: 50px;
+        /* display: flex;  */
+        margin-top: 50%;
+	}
+    .kartu{
+        /* justify-content: center; */
+        margin-left: 40px;
+        /* align-items: center; */
+        /* display: flex; */
+    }
+	.sidebar{
+		width: auto;
+		float: none;
+	}
+
+  
+
+}

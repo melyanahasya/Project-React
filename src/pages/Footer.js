@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div style={{ backgroundColor: "#F0DBDB", height: "260px" }}>
+    <div
+      style={{ backgroundColor: "#F0DBDB", height: "259px" }}
+      className="footer"
+    >
       <br />
       <div
         style={{
@@ -23,6 +26,7 @@ export default function Footer() {
           <div style={{ textAlign: "left" }}>
             <p>
               <a
+                target="_blank"
                 style={{ textDecoration: "none", color: "black" }}
                 href="https://fontawesome.com/"
               >
@@ -32,6 +36,7 @@ export default function Footer() {
 
             <p>
               <a
+                target="_blank"
                 style={{ textDecoration: "none", color: "black" }}
                 href="https://getbootstrap.com/"
               >
@@ -40,6 +45,7 @@ export default function Footer() {
             </p>
             <p>
               <a
+                target="_blank"
                 style={{ textDecoration: "none", color: "black" }}
                 href="https://reactjs.org/"
               >
@@ -68,14 +74,19 @@ export default function Footer() {
           </p>
         </div>
 
-        <div style={{ display: "flex", gap: "20%", fontSize: "30px" }}>
+        <div
+          style={{ display: "flex", gap: "9px", fontSize: "20px" }}
+          className="sosmed"
+        >
           <a
+            target="_blank"
             style={{ color: "black" }}
-            href="https://keluyuran.com/wp-content/uploads/2021/10/mango-passion-frap_.webp"
+            href="https://www.instagram.com/starbucksindonesia/"
           >
             <i className="fab fa-instagram"></i>
           </a>
           <a
+            target="_blank"
             style={{ color: "black" }}
             href="https://twitter.com/starbucksindonesia/"
           >
@@ -83,13 +94,14 @@ export default function Footer() {
           </a>
           <a
             style={{ color: "black" }}
+            target="_blank"
             href="https://www.facebook.com/StarbucksIndonesia/"
           >
             <i className="fab fa-facebook"></i>
           </a>
         </div>
       </div>
-      <div>
+      <div style={{backgroundColor: "#434242", color: "white"}}>
         <p>
           <i className="far fa-copyright"></i> Copyright by Melyana
         </p>

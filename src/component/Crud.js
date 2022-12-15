@@ -5,38 +5,12 @@ import { numberWithCommas } from "../utils/Utils";
 
 export default function Cart() {
   const [food, setFood] = useState([]);
-  const total = food.reduce((a, b) => a + b.harga, 0);  // buat total harga
 
- 
-
-  const AddPesanan = async (food) => {
-    await axios.post(" http://localhost:8000/pesanan", food);
-    Swal.fire("Good job!", "You clicked the button!", "success")
-        .then(() => {
-          window.location.reload();
-        })
-        .catch((error) => {
-          alert("terjadi kesalahan" + error);
-        });
-  }
-
-
-
-
-  const DeletePesanan = async (food) => {
-    await axios.delete("http://localhost:8000/keranjang/", food);
-    Swal.fire("Good job!", "You clicked the button!", "success")
-      .then(() => {
-        window.location.reload();
-      })
-      .catch((error) => {
-        alert("terjadi kesalahan" + error);
-      });
-  };
+  
 
   const getAll = () => {
     axios
-      .get("http://localhost:8000/keranjang")
+      .get("http://localhost:8000/makanan")
       .then((res) => {
         setFood(res.data);
       })
@@ -56,7 +30,7 @@ export default function Cart() {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete("http://localhost:8000/keranjang/" + id);
+        axios.delete("http://localhost:8000/makanan/" + id);
         Swal.fire("Deleted!", "Your file has been deleted.", "success");
         window.location.reload();
       }
@@ -67,6 +41,7 @@ export default function Cart() {
   useEffect(() => {
     getAll();
   }, []);
+
   return (
     <div style={{ fontFamily: "public-sans", fontSize: "19px" }}>
       <div>
@@ -82,7 +57,7 @@ export default function Cart() {
                 Deskripsi
               </th>
               <th scope="col">Harga (Rp)</th>
-              {localStorage.getItem("id") !== null ? (
+              {localStorage.getItem("username") !== null ? (
                 <th>Action</th>
               ) : (
                 <></>
@@ -100,8 +75,18 @@ export default function Cart() {
                   <td>{food.produk}</td>
                   <td style={{ fontSize: "17px" }}>{food.deskripsi}</td>
                   <td>{numberWithCommas(food.harga)}</td>
-                  {localStorage.getItem("id") !== null ? (
+                  {localStorage.getItem("username") !== null ? (
                     <td className="action">
+                      <a href={"/edit/" + food.id}>
+                        <button
+                          variant="warning"
+                          style={{ border: "none" }}
+                          className="mx-1"
+                        >
+                          <i className="far fa-edit"></i>{" "}
+                        </button>
+                      </a>
+                      ||
                       <button
                         variant="danger"
                         style={{ border: "none" }}
@@ -119,30 +104,9 @@ export default function Cart() {
             })}
           </tbody>
         </table>
-        <strong
-          style={{
-            backgroundColor: "#F0DBDB",
-            display: "block",
-            width: "170px",
-            padding: "5px",
-            margin: "10px",
-          }}
-        >
-          Total : {total}
-        </strong>
-        <button
-          style={{
-            border: "none",
-            display: "block",
-            width: "170px",
-            padding: "5px",
-            margin: "10px",
-            backgroundColor: "#F0DBDB",
-          }}
-          onClick={() => AddPesanan (food)}  
-           >
-          Chekout
-        </button>
+        <a href="/">
+        <i className="fas fa-long-arrow-left"></i>
+      </a>
       </div>
     </div>
   );

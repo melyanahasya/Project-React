@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import Crud from "../component/Crud";
 import "../style/home.css";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
@@ -6,9 +7,23 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 import { numberWithCommas } from "../utils/Utils";
+import Swal from "sweetalert2";
+import AOS from "aos";
+import Footers from "./Footers";
 
 export default function Home() {
   const [food, setFood] = useState([]);
+
+  const AddKeranjang = async (food) => {
+    await axios.post("http://localhost:8000/keranjang/", food);
+    Swal.fire("Good job!", "You clicked the button!", "success")
+      .then(() => {
+        window.location.reload();
+      })
+      .catch((error) => {
+        alert("terjadi kesalahan" + error);
+      });
+  };
 
   const getAll = async () => {
     await axios
@@ -25,9 +40,12 @@ export default function Home() {
     getAll();
   }, []);
 
+  AOS.init();
+
   return (
-    <div style={{ fontFamily: "public-sans" }}>
+    <div style={{ fontFamily: "public-sans",  backgroundColor: "#F9F2ED" }} className="all">
       <Navbar />
+
       <div
         id="carouselExampleFade"
         className="carousel slide carousel-fade"
@@ -90,46 +108,66 @@ export default function Home() {
         <h3>Pilihan Terbaik</h3>
         <hr />
 
-        <div style={{ gap: "50%", padding: "5%" }} >
-          <div className="row gy-5">
-            {food.map((food) => {
-              return (
-                <div className="col-3">
-                  <Card style={{ width: "18rem", backgroundColor: "#F0DBDB" }}>
-                    <Card.Img variant="top" src={food.gambar} alt="" />
-                    <Card.Body>
-                      <Card.Title>{food.produk}</Card.Title>
-                      <Card.Text style={{ fontSize: "17px" }}>
-                        {food.deskripsi}
-                      </Card.Text>
-                    </Card.Body>
-                    <ListGroup className="list-group-flush">
-                      <ListGroup.Item style={{ backgroundColor: "#F1EEE9" }}>
-                        {" "}
-                        Start From Rp {numberWithCommas(food.harga)}{" "}
-                      </ListGroup.Item>
-                    </ListGroup>
-                    <Card.Body>
-                      <a style={{ color: "black" }} href="">
-                        {" "}
-                        <i className="fas fa-cart-plus"></i>{" "}
-                      </a>
-                      <Card.Link
-                        style={{ color: "black" }}
-                        className="button"
-                        href={food.viewmore}
-                      >
-                        View More
-                      </Card.Link>
-                    </Card.Body>
-                  </Card>
-                </div>
-              );
-            })}
+        <div className="kartu">
+          <div style={{ gap: "50%", padding: "5%",  backgroundColor: "#F9F2ED" }} className="card">
+            <div className="row gy-5">
+              {food.map((food) => {
+                return (
+                  <div className="col-3">
+                    <Card
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                      style={{ width: "18rem", backgroundColor: "#F0DBDB" }}
+                    >
+                      <Card.Img variant="top" src={food.gambar} alt="" />
+                      <Card.Body>
+                        <Card.Title>{food.produk}</Card.Title>
+                        <Card.Text style={{ fontSize: "17px" }}>
+                          {food.deskripsi}
+                        </Card.Text>
+                      </Card.Body>
+                      <ListGroup className="list-group-flush">
+                        <ListGroup.Item style={{ backgroundColor: "#F1EEE9" }}>
+                          Start From Rp {numberWithCommas(food.harga)}
+                        </ListGroup.Item>
+                      </ListGroup>
+                      <Card.Body>
+                        {localStorage.getItem("id") !== null ? (
+                          <>
+                            <button
+                              style={{
+                                border: "none",
+                                color: "black",
+                                backgroundColor: "#F0DBDB",
+                              }}
+                              onClick={() => AddKeranjang(food)}
+                            >
+                              <i className="fas fa-cart-plus"></i>
+                            </button>
+                          </>
+                        ) : (
+                          <></>
+                        )}
+
+                        <Card.Link
+                          target="_blank"
+                          style={{ color: "black" }}
+                          className="button"
+                          href={food.viewmore}
+                        >
+                          View More
+                        </Card.Link>
+                      </Card.Body>
+                    </Card>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
+      <Footers/>
     </div>
   );
 }

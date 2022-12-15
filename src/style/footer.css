@@ -1,0 +1,15 @@
+@media screen and (max-width:680px){
+
+    .footer{
+        display: flex; 
+        margin-top: 50%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sosmed{
+       display: block;
+       gap: 4px;
+       padding-left: 10px;
+    }
+}

@@ -2,8 +2,8 @@
   "admins": [
     {
       "id": 1,
-      "username": "Admin",
-      "password": "Administrator"
+      "username": "admin",
+      "password": "administrator"
     }
   ],
   "users": [
@@ -22,84 +22,97 @@
     {
       "id": 1,
       "gambar": "https://keluyuran.com/wp-content/uploads/2021/08/Chocolate-Stroop-Waffle_.webp",
-      "namaMakanan": "Chocolate Stroop Waffle",
-      "harga": "15,000"
+      "produk": "Chocolate Stroop Waffle",
+      "deskripsi": "Dutch snack. It tastes really good. Crispy waffles with a layer of caramel ",
+      "harga": 11000
     },
     {
       "id": 2,
       "gambar": "https://keluyuran.com/wp-content/uploads/2021/08/Sumatra-Chocolate-Eclair_.webp",
-      "namaMakanan": "Sumatra Chocolate Éclair",
-      "harga": " 25,000"
+      "produk": "Sumatra Chocolate Éclair",
+      "deskripsi": "Eclair is a variant of eclairs or choux pastry which is shaped elongated",
+      "harga": 21000
     },
     {
       "id": 3,
       "gambar": "https://keluyuran.com/wp-content/uploads/2021/08/Blue-Velvet-Roll-Cake_.webp",
-      "namaMakanan": "Blue Velvet Roll Cake",
-      "harga": "28,000"
+      "produk": "Blue Velvet Roll Cake",
+      "deskripsi": "The blue cake served with sweet tea and other dishes is very delicious",
+      "harga": 9000
     },
     {
       "id": 4,
       "gambar": "https://keluyuran.com/wp-content/uploads/2021/08/Red-Velvet-Roll-Cake_.webp",
-      "namaMakanan": "Red Velvet Roll Cake",
-      "harga": "30,000"
+      "produk": "Red Velvet Roll Cake",
+      "deskripsi": "The red cake served with sweet tea and other dishes is very delicious",
+      "harga": 15000
     }
   ],
   "minumanDingin": [
     {
       "id": 1,
       "gambar": "https://www.rukita.co/stories/wp-content/uploads/2019/11/starbucks-americano.jpg",
-      "namaMinuman": "Caffe Americano",
-      "harga": "45,000"
+      "produk": "Caffe Americano",
+      "deskripsi": "Americano coffee is espresso with hot water added. Regarding taste",
+      "harga": 15000
     },
     {
       "id": 2,
       "gambar": "https://www.rukita.co/stories/wp-content/uploads/2019/11/latte-starbucks.jpg",
-      "namaMinuman": "Variasi Latte",
-      "harga": "35,000"
+      "produk": "Variasi Latte",
+      "deskripsi": "Latte or Caffè latte (Italian for milk coffee) is coffee mixed with milk ",
+      "harga": 14000
     },
     {
       "id": 3,
       "gambar": "https://www.rukita.co/stories/wp-content/uploads/2019/11/stabucks-cheesecake-frappuccinos-t.jpg",
-      "namaMinuman": "Frappucino",
-      "harga": "62,000"
+      "produk": "Frappucino",
+      "deskripsi": "Frappuccinos are a line of trademarked coffee drinks sold by Starbucks",
+      "harga": 22000
     },
     {
       "id": 4,
       "gambar": "https://www.rukita.co/stories/wp-content/uploads/2019/11/banana-split-frappucino.jpg",
-      "namaMinuman": "Banana Split Frappuccino",
-      "harga": "39,000"
+      "produk": "Banana Split Frappuccino",
+      "deskripsi": "The newest drink with a unique composition, which is topped ",
+      "harga": 19000
     },
     {
       "id": 5,
       "gambar": "https://www.rukita.co/stories/wp-content/uploads/2019/11/butterbeer-frappuccino.jpg",
-      "namaMinuman": " Butterbeer Frappuccino",
-      "harga": "58,000"
+      "produk": "Butterbeer Frappuccino",
+      "deskripsi": "The fresh taste of green beans blends perfectly with Starbucks signature milk",
+      "harga": 18000
     }
   ],
   "minumanHangat": [
     {
       "id": 2,
-      "gambarHangat": "https://keluyuran.com/wp-content/uploads/2021/10/mango-passion-frap_.webp",
-      "namaMinumanHangat": "Hot Manggoes",
-      "hargaHangat": "14,000"
+      "gambar": "https://keluyuran.com/wp-content/uploads/2021/10/mango-passion-frap_.webp",
+      "produk": "Hot Manggoes",
+      "deskripsi": "Mango fruit drink that is warmly served at any time and is combined with biscuits",
+      "harga": 8000
     },
     {
       "id": 3,
-      "gambarHangat": "https://keluyuran.com/wp-content/uploads/2019/03/pumpkin-spice-latte_.webp",
-      "namaMinumanHangat": "Pumpkin Spice Latte",
-      "hargaHangat": "21,000"
+      "gambar": "https://keluyuran.com/wp-content/uploads/2019/03/pumpkin-spice-latte_.webp",
+      "produk": "Pumpkin Spice Latte",
+      "deskripsi": "Pumpkin Spice Latte is a coffee drink topped with a mix of fall seasoning spices cinnamon",
+      "harga": 10000
     },
     {
       "id": 4,
-      "gambarHangat": "https://keluyuran.com/wp-content/uploads/2021/07/minuman-starbucks-paling-enak-dark-mocca-frappuccino_.webp",
-      "namaMinumanHangat": "Dark Mocca Frappuccino",
-      "hargaHangat": "31,000"
+      "gambar": "https://keluyuran.com/wp-content/uploads/2021/07/minuman-starbucks-paling-enak-dark-mocca-frappuccino_.webp",
+      "produk": "Dark Mocca Frappuccino",
+      "deskripsi": " We blend dark cocoa with milk, ice and coffee for an extraordinarily chocolatey experience that's then topped with a swirl ",
+      "harga": 11000
     },
     {
       "id": 5,
-      "gambarHangat": "https://keluyuran.com/wp-content/uploads/2021/07/minuman-starbucks-paling-enak-green-tea-cream-frappuccino_.webp",
-      "namaMinumanHangat": "Green Tea Cream Frappucino",
-      "hargaHangat": "29,000"
+      "gambar": "https://keluyuran.com/wp-content/uploads/2021/07/minuman-starbucks-paling-enak-green-tea-cream-frappuccino_.webp",
+      "produk": "Green Tea Cream Frappucino",
+      "deskripsi": "Green tea cream frappuccino itself is premium matcha green tea which is blended with milk and ice cubes",
+      "harga": 22000
     }
   ],
   "makanan": [
@@ -107,7 +120,7 @@
       "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648994131-QEYvoc.jpg",
       "produk": "Espersso Brownies",
       "deskripsi": "Simply a rectangular chocolate and espresso baked confection which is very suitable to be served at family events ",
-      "harga": 52000,
+      "harga": 21000,
       "viewmore": "https://www.starbucks.co.id/menu/food-list/reserve-menu",
       "id": 1
     },
@@ -116,7 +129,7 @@
       "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648911669-UiOLxO.jpg",
       "produk": "Bahn Mie Chiken Baguette",
       "deskripsi": "Vietnamese baguette with slow roast chicken, spicy mayonnaise and crispy pickle carrot & turnip, and fresh herbs",
-      "harga": 56000,
+      "harga": 22000,
       "viewmore": "https://www.starbucks.co.id/menu/food-list/reserve-menu/sandwiches"
     },
     {
@@ -132,7 +145,7 @@
       "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648787038-RNxn9x.jpg",
       "produk": "Chese Quiche",
       "deskripsi": "Quiche is a food that comes from France. This food is made from wheat flour with a filling of spinach, salmon, chicken",
-      "harga": 67000,
+      "harga": 21000,
       "viewmore": "https://www.starbucks.co.id/menu/food-list/core-menu/savory-pies/cheese-quiche"
     },
     {
@@ -140,7 +153,7 @@
       "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648107033-tASXO2.jpg",
       "produk": "Brewed Coffe",
       "deskripsi": "Cold Brew Coffee is a cold brew coffee dish that is different from iced coffee such as Iced Americano, Iced Long Black or Iced Japanese",
-      "harga": 65000,
+      "harga": 25000,
       "viewmore": "https://www.starbucks.co.id/menu/beverage-list"
     },
     {
@@ -148,7 +161,7 @@
       "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648107198-BEeE4W.jpg",
       "produk": "Blanded Beverages",
       "deskripsi": "Vietnamese baguette with slow roast chicken, spicy mayonnaise and crispy pickle carrot & turnip, and fresh herbs",
-      "harga": 65000,
+      "harga": 24000,
       "viewmore": "https://www.starbucks.co.id/menu/beverage-list"
     },
     {
@@ -168,5 +181,49 @@
       "viewmore": "https://www.starbucks.co.id/menu/beverage-list"
     }
   ],
-  "keranjang": []
+  "keranjang": [
+    {
+      "id": 2,
+      "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648911669-UiOLxO.jpg",
+      "produk": "Bahn Mie Chiken Baguette",
+      "deskripsi": "Vietnamese baguette with slow roast chicken, spicy mayonnaise and crispy pickle carrot & turnip, and fresh herbs",
+      "harga": 22000,
+      "viewmore": "https://www.starbucks.co.id/menu/food-list/reserve-menu/sandwiches"
+    },
+    {
+      "id": 3,
+      "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648784231-mxdnJ2.jpg",
+      "produk": "Croissant",
+      "deskripsi": "Croissant is a pastry that has a crunchy texture and savory taste. The crunchy texture makes croissants suitable",
+      "harga": 21000,
+      "viewmore": "https://food.grab.com/id/id/restaurant/the-croissants-panjer-delivery/6-C23KAEETRETZAX"
+    },
+    {
+      "id": 1,
+      "gambar": "https://keluyuran.com/wp-content/uploads/2021/08/Chocolate-Stroop-Waffle_.webp",
+      "produk": "Chocolate Stroop Waffle",
+      "deskripsi": "Dutch snack. It tastes really good. Crispy waffles with a layer of caramel ",
+      "harga": 11000
+    }
+  ],
+  "pesanan": [
+    [
+      {
+        "id": 2,
+        "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648911669-UiOLxO.jpg",
+        "produk": "Bahn Mie Chiken Baguette",
+        "deskripsi": "Vietnamese baguette with slow roast chicken, spicy mayonnaise and crispy pickle carrot & turnip, and fresh herbs",
+        "harga": 22000,
+        "viewmore": "https://www.starbucks.co.id/menu/food-list/reserve-menu/sandwiches"
+      },
+      {
+        "id": 3,
+        "gambar": "https://starbucks-web-prod.oss-ap-southeast-5.aliyuncs.com/temporary/gallery/1648784231-mxdnJ2.jpg",
+        "produk": "Croissant",
+        "deskripsi": "Croissant is a pastry that has a crunchy texture and savory taste. The crunchy texture makes croissants suitable",
+        "harga": 21000,
+        "viewmore": "https://food.grab.com/id/id/restaurant/the-croissants-panjer-delivery/6-C23KAEETRETZAX"
+      }
+    ]
+  ]
 }

@@ -41,7 +41,7 @@ export default function Login() {
         })
     }
   return (
-    <div style={{ backgroundColor: "#F0DBDB" }} className="container border my-5 pt-3 pb-5 px-5 form-login ">
+    <div style={{ backgroundColor: "#F0DBDB"}} className="container border my-5 pt-3 pb-5 px-5 form-login ">
         <div style={{fontFamily: "public-sans", fontSize: "17px"}}>
         <h1 className="mb-5">Form Login Admin</h1>
         <Form  onSubmit={login} method="POST">
